@@ -1,0 +1,12 @@
+$folio = $row["Folio"];
+$url = "".$folio."";
+//TIPO DE CÓDIGO
+$cht = "qr";
+//TAMAÑO DEL CÓDIGO
+$chs = "300x300";
+//RUTA
+$chl = urlencode("wwww.google.com?search=".$url);
+//CÓDIFICACIÓN
+$choe = "UTF-8";
+//RUTA DEL QR
+$qrcode = 'https://chart.googleapis.com/chart?cht=' . $cht . '&chs=' . $chs . '&chl=' . $chl . '&choe=' . $choe;
